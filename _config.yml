@@ -24,7 +24,7 @@ github_username:  funktechno
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: just-the-docs
 # plugins:
 #   - jekyll-feed
 
