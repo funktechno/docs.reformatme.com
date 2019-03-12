@@ -49,7 +49,7 @@ search_enabled: true
 # Aux links for the upper right navigation
 aux_links:
   "Edit Docs":
-    - "//github.com/pmarsceill/just-the-docs"
+    - "//github.com/lastlink/docs.reformatme.com"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
