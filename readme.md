@@ -5,6 +5,8 @@
 ## Getting started
 
 * install ruby
+* `gem install bundler`
+* `bundler install`
 * install jekyll as per https://jekyllrb.com/docs/
 
 ## Development
