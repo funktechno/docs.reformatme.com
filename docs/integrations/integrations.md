@@ -8,5 +8,5 @@ permalink: /docs/integrations
 
 # Integrations
 
-To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.
+Here you can find out the setup and options for each supported integrations. Integrations are free additional functions are not.
 {: .fs-6 .fw-300 }
