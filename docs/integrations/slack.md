@@ -117,23 +117,30 @@ Setup the **Request URL** depending on the function desired. If it's a public fu
 Try out the command in slack.
 * `/glpublic Test googlee pizza search *glpizza`
 
+If it is a private channel you may need to invite the bot to participate. `/invite @reformatme`
+
 ![](/)
-
-
-Will use soath key.
-Picture picture
 
 ### App all messages (visible to all)
 
-May want reformatme to listen to all messages sent and 
+May want reformatme to listen to all messages sent and respond if keyword found. Listening to every message may exceed limit quickly. Not recommended for lower plans. 
+
+You would set this up using the Event Subscriptions and then specify the channel you'd like to listen to. You're only able to run one url for the event subscriptions so you could only do one ReformatMe transformation. You'd also need to setup the events you'd like to listen for. Such as Workspace Events/Bot Events: message.groups, message.channels, or message.im. App Unfurl Domains are not supported.
+
+![](/assets/images/slack/event-subscriptions.png)
 
 ---
 
 ## Example commands
-
-Command, listen to every message may exceed limit quickly.
+{% raw %}
+Command, 
 * `/glpublic test *glpizza`
+  * Request URL `https://api.reformatme.com/?t=slack&token={{token}}&key=*gl&r=https://www.google.com/search?q&oauth={{slackOauth}}`
+  * Response in slack **test https://www.google.com/search?q=pizza**
 * `/glprivate I would like a google <*gl|pizza> search`
+  * Request URL `https://api.reformatme.com/?t=slack&token={{token}}&key=*gl&r=https://www.google.com/search?q`
+  * Response in slack **I would like a google [pizza](https://www.google.com/search?q=) search**
+{% endraw %}
 
 ---
 
