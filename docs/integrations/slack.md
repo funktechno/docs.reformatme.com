@@ -5,78 +5,32 @@ parent: Integrations
 nav_order: 1
 ---
 
-# Code
+# Slack Integration
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
+Can setup custom messages not normally supported for users. Slack requires that service responds in less than 3 seconds (reference) to avoid a temporary error. If this is occuring please give use [feedback](/docs/feedback).
 
-1. TOC
+* TOC
 {:toc}
 
 ---
 
-## Inline code
+## Configuration
 
-Code can be rendered inline by wrapping it in single back ticks.
-
-<div class="code-example" markdown="1">
-Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div>
-```markdown
-Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-```
+Will use soath key.
+Picture picture
 
 ---
 
-## Syntax highlighted code blocks
+## Options
 
-Use Jekyll's built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name:
-
-<div class="code-example" markdown="1">
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-</div>
-{% highlight markdown %}
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-{% endhighlight %}
+Command, listen to every message may exceed limit quickly.
+`/glpublic test *glpizza`
 
 ---
 
-## Code blocks with rendered examples
+## Slack builder
 
-To demonstrate front end code, sometimes it's useful to show a rendered example of that code. After including the styles from your project that you'll need to show the rendering, you can use a `<div>` with the `code-example` class, followed by the code block syntax. If you want to render your output with Markdown instead of HTML, use the `markdown="1"` attribute to tell Jekyll that the code you are rendering will be in Markdown format... This is about to get meta...
+Since all messages sent through ReformatMe are `POST` messages to the slack api service you may use the more advanced formatting service not available to most users. One example is [Linking to URLs](https://api.slack.com/docs/message-formatting#linking_to_urls) in given [here](https://api.slack.com/docs/messages/builder?msg=%7B%22text%22%3A%22I%20am%20a%20test%20message%20%3Chttp%3A%2F%2Fslack.com%7Cslack%3E%22%7D)
 
-<div class="code-example" markdown="1">
-
-<div class="code-example" markdown="1">
-
-[Link button](http://example.com/){: .btn }
-
-</div>
-```markdown
-[Link button](http://example.com/){: .btn }
-```
-
-</div>
-{% highlight markdown %}
-<div class="code-example" markdown="1">
-
-[Link button](http://example.com/){: .btn }
-
-</div>
-```markdown
-[Link button](http://example.com/){: .btn }
-```
-{% endhighlight %}
+---
