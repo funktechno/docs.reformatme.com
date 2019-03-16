@@ -10,7 +10,7 @@ description: Expected response codes returned in the ReformatMe service.
 # Responses
 {: .no_toc }
 
-Responses may return in with one of the following headers.
+Responses may return with one of the following headers.
 
 * TOC
 {:toc}
