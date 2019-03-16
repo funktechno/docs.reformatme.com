@@ -10,7 +10,7 @@ description: Functions available for ReformatMe service.
 # Functions
 {: .no_toc }
 
-Any first level attributes in the json send will be attempt to be changed as per the function used. Multiple function calls are supported, but they will all be applied. The order given of the function call will be how they are used. An attribute `changed` will return **1** if any changes are done or **0** if none are successfully performed. Response is returned with escape characters. May give an optional parameter if there are requests to make this transformation configurable.
+Any first level attributes in the json sent will be attempt to be changed as per the function used. Multiple function calls are supported, but they will all be applied. The order given of the functions to be used will be how when they are applied. An attribute `changed` will return **1** if any changes are done or **0** if none are successfully performed. Response is returned with escape characters. May give an optional parameter if there are requests to make this transformation configurable.
 
 Premium function use the `f` parameter and are comma separated. E.g. `&f=reverse,uppercase` would first reverse any text in the 1st level json request body attributes and then make all these text uppercase.
 
